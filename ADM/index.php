@@ -31,8 +31,8 @@
 
     <h2>Alterar Dados</h2>
     <form action="crud.php" method="get">
-        CPF do Bombeiro a ser alterado: <input type="text" name="cpf" required><br>
-        Novo CPF: <input type="text" name="cpf" required><br>
+        CPF do Bombeiro a ser alterado: <input type="text" name="cpf" required><br><br>
+        Novo CPF: <br> <input type="text" name="cpf" required><br>
         Novo Email: <input type="email" name="email" required><br>
         Nova Senha: <input type="password" name="senha" required><br>
         Novo Nome: <input type="text" name="nome" required><br>
@@ -73,7 +73,7 @@ $comando->execute();
         'email' => $email,
         'telefone' => $telefone
         );
-    echo $dados['nome', 'email', 'telefone'];  
+    echo $dados;  
 ?>
 
 </table>
